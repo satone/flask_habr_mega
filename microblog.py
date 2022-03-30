@@ -1,7 +1,7 @@
-from app import app
+from app import app, db
+from app.models import User, Post
 
-# @app.route('/')
-# @app.route('/index')
-# def index():
-#     user = {'username': 'satone'}
-#     return f'''<html><head><title>Zopa</title></head><body><h1>Hello, {user['username']}</h1></body></html>'''
+
+@app.shell_context_processor
+def make_shell_context():
+    return {'db': db, 'User': User, 'Post': Post}
