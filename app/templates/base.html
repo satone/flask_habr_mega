@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     {% if title %}
-    <title>{{ title }} - Microblog</title>
+    <title>{{ title }} - Micro blog</title>
     {% else %}
-    <title>Welcome - Microblog</title>
+    <title>Welcome - Micro blog</title>
     {% endif %}
 </head>
 <body>
-    <div>Microblog:
+    <div>Micro blog:
         <a href="{{ url_for('index') }}">Home</a>
-        <a href="{{ url_for('login') }}">Login</a>
+        {% if current_user.is_anonymous %}
+            <a href="{{ url_for('login') }}">Login</a>
+        {% else %}
+            <a href="{{ url_for('logout') }}">Logout</a>
+
     </div>
     <hr>
     {% with messages = get_flashed_messages() %}
