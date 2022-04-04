@@ -1,11 +1,11 @@
-flask==2.1.1
-flask-login
+flask
+flask-login==0.6.0
 flask-bootstrap
-flask-wtf
+flask-wtf==1.0.1
 flask-sqlalchemy
 flask-migrate
 WTForms
-Werkzeug==2.1.1
+Werkzeug
 alembic
-SQLAlchemy
+SQLAlchemy==1.4.34
 email-validator
