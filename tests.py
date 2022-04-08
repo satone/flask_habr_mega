@@ -2,6 +2,7 @@ from datetime import datetime, timedelta
 import unittest
 from app import app, db
 from app.models import User, Post
+from hashlib import md5
 
 
 class UserModelCase(unittest.TestCase):
@@ -18,6 +19,11 @@ class UserModelCase(unittest.TestCase):
         u.set_password('cat')
         self.assertFalse(u.check_password('dog'))
         self.assertTrue(u.check_password('cat'))
+
+    def test_avatar(self):
+        u = User(username='john', email='j@j.j')
+        digest = md5(u.email.lower().encode('utf-8')).hexdigest()
+        self.assertEqual(u.avatar(128), (f'https://www.gravatar.com/avatar/{digest}?d=identicon&s=128'))
 
     def test_follow(self):
         u1 = User(username='John', email='j@j.j')
