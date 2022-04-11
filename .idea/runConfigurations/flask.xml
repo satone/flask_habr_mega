@@ -7,7 +7,7 @@
       <env name="PYTHONUNBUFFERED" value="1" />
       <env name="FLASK_APP" value="microblog.py" />
       <env name="FLASK_ENV" value="development" />
-      <env name="FLASK_DEBUG" value="0" />
+      <env name="FLASK_DEBUG" value="1" />
     </envs>
     <option name="SDK_HOME" value="" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />

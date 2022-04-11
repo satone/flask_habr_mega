@@ -4,3 +4,68 @@
 2022-04-07 09:21:26,185 INFO: Microblog Startup [in /home/user/PycharmProjects/flask_habr_mega/app/__init__.py:42]
 2022-04-08 09:51:26,071 INFO: Microblog Startup [in /home/user/PycharmProjects/flask_habr_mega/app/__init__.py:42]
 2022-04-08 13:58:06,331 INFO: Microblog Startup [in /home/user/PycharmProjects/flask_habr_mega/app/__init__.py:42]
+2022-04-11 12:46:45,570 INFO: Microblog Startup [in C:\Users\saton\OneDrive - korjkx.ru\PycharmProjects\flask_habr_mega\app\__init__.py:42]
+2022-04-11 12:46:50,528 ERROR: Exception on / [GET] [in C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\saton\OneDrive - korjkx.ru\PycharmProjects\flask_habr_mega\app\routes.py", line 30, in index
+    return render_template('index.html', title='Home Page', form=form, posts=posts)
+  File "C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    return _render(
+  File "C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\jinja2\environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\saton\OneDrive - korjkx.ru\PycharmProjects\flask_habr_mega\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\saton\OneDrive - korjkx.ru\PycharmProjects\flask_habr_mega\app\templates\base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\saton\OneDrive - korjkx.ru\PycharmProjects\flask_habr_mega\app\templates\index.html", line 9, in block 'content'
+    {{ form.pst(cols=32, rows=4) }}<br>
+  File "C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\jinja2\utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: 'app.forms.PostForm object' has no attribute 'pst'
+2022-04-11 12:48:33,484 INFO: Microblog Startup [in C:\Users\saton\OneDrive - korjkx.ru\PycharmProjects\flask_habr_mega\app\__init__.py:42]
+2022-04-11 12:48:36,301 ERROR: Exception on / [GET] [in C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\saton\OneDrive - korjkx.ru\PycharmProjects\flask_habr_mega\app\routes.py", line 30, in index
+    return render_template('index.html', title='Home Page', form=form, posts=posts)
+  File "C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    return _render(
+  File "C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\jinja2\environment.py", line 926, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\saton\OneDrive - korjkx.ru\PycharmProjects\flask_habr_mega\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\saton\OneDrive - korjkx.ru\PycharmProjects\flask_habr_mega\app\templates\base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\saton\OneDrive - korjkx.ru\PycharmProjects\flask_habr_mega\app\templates\index.html", line 10, in block 'content'
+    {% for error in from.post.errors %}
+  File "C:\Users\saton\PycharmProjects\flask_habr_mega\venv\lib\site-packages\jinja2\environment.py", line 475, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'from' is undefined
+2022-04-11 12:49:22,663 INFO: Microblog Startup [in C:\Users\saton\OneDrive - korjkx.ru\PycharmProjects\flask_habr_mega\app\__init__.py:42]
