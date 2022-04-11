@@ -9,3 +9,5 @@ Werkzeug
 alembic
 SQLAlchemy
 email-validator
+flask-mail
+pyjwt
