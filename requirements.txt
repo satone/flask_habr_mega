@@ -11,3 +11,4 @@ SQLAlchemy
 email-validator
 flask-mail
 pyjwt
+flask-moment
