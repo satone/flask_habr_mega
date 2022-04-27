@@ -15,3 +15,5 @@ class Config(object):
     ADMINS = ['pdm@korjkx.ru']
 
     POSTS_PER_PAGE = 3
+
+    LANGUAGES = ['en', 'ru']

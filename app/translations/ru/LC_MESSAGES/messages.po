@@ -1,0 +1,137 @@
+# Russian translations for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-04-27 15:08+0300\n"
+"PO-Revision-Date: 2022-04-27 15:08+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.1\n"
+
+#: app/__init__.py:29
+msgid "Please log in to access this page"
+msgstr "Ддя доступа надо войти в систему"
+
+#: app/forms.py:9 app/forms.py:34
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: app/forms.py:10 app/forms.py:55
+msgid "Email"
+msgstr "Электропочта"
+
+#: app/forms.py:11 app/forms.py:60
+msgid "Password"
+msgstr "Пароль"
+
+#: app/forms.py:12
+msgid "Retype password"
+msgstr "Снова пароль"
+
+#: app/forms.py:13
+msgid "Register"
+msgstr "Регистрация"
+
+#: app/forms.py:18
+msgid "Please enter another name"
+msgstr "Введите другое имя"
+
+#: app/forms.py:23
+msgid "Please use another email"
+msgstr "Укажите другую почту"
+
+#: app/forms.py:27
+msgid "User"
+msgstr "Пользователь"
+
+#: app/forms.py:28
+msgid "Pasword"
+msgstr "Пароль"
+
+#: app/forms.py:29
+msgid "Remember me"
+msgstr "Запомнить"
+
+#: app/forms.py:30
+msgid "Login"
+msgstr "Вход"
+
+#: app/forms.py:35
+msgid "About me"
+msgstr "Обо мне"
+
+#: app/forms.py:36 app/forms.py:51
+msgid "Submit"
+msgstr "Отправить"
+
+#: app/forms.py:46
+msgid "Please use a different name"
+msgstr "Выберите другое имя"
+
+#: app/forms.py:50
+msgid "Say something"
+msgstr "Скажите что-нибудь"
+
+#: app/forms.py:56 app/forms.py:62
+msgid "Request Password Reset"
+msgstr "Сбросить пароль"
+
+#: app/forms.py:61
+msgid "Repeat password"
+msgstr "Снова пароль"
+
+#: app/routes.py:29
+msgid "Your post is now alive!"
+msgstr "Ваш пост опубликован"
+
+#: app/routes.py:56
+msgid "Invalid username or password"
+msgstr "Неверное имя или пароль"
+
+#: app/routes.py:82
+msgid "Congratulation! You are registered"
+msgstr "Вы зарегистрировались"
+
+#: app/routes.py:106
+msgid "Your changes have been saved."
+msgstr "Изменения сохранены"
+
+#: app/routes.py:119 app/routes.py:135
+msgid "User %(username) not found"
+msgstr "Пользователь %(username) не найден"
+
+#: app/routes.py:122
+msgid "You cannot follow yourself"
+msgstr "Вы не можете подписаться на себя"
+
+#: app/routes.py:126
+msgid "You are following %(username)!"
+msgstr "Вы подписались на %(username)"
+
+#: app/routes.py:142
+msgid "You are not following %(username)"
+msgstr "Вы отпаслись от %(username)"
+
+#: app/routes.py:155
+msgid "Check your email for the instructions to reset your password"
+msgstr "Дальнейшие инструкции отправлены на почту"
+
+#: app/routes.py:171
+msgid "Your password has been reset"
+msgstr "Ваш пароль быд сброшен"
+
+#: app/templates/404.html:4
+msgid "File Not found"
+msgstr "Файл не найден"
+
