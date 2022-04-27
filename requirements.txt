@@ -13,3 +13,4 @@ pyjwt
 WTForms
 Werkzeug
 SQLAlchemy
+click
