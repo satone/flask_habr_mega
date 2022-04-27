@@ -14,3 +14,4 @@ WTForms
 Werkzeug
 SQLAlchemy
 click
+guess-language_spirit
