@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-04-27 15:08+0300\n"
+"POT-Creation-Date: 2022-04-28 08:49+0300\n"
 "PO-Revision-Date: 2022-04-27 15:08+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -91,47 +91,59 @@ msgstr "Сбросить пароль"
 msgid "Repeat password"
 msgstr "Снова пароль"
 
-#: app/routes.py:29
+#: app/routes.py:36
 msgid "Your post is now alive!"
 msgstr "Ваш пост опубликован"
 
-#: app/routes.py:56
+#: app/routes.py:63
 msgid "Invalid username or password"
 msgstr "Неверное имя или пароль"
 
-#: app/routes.py:82
+#: app/routes.py:89
 msgid "Congratulation! You are registered"
 msgstr "Вы зарегистрировались"
 
-#: app/routes.py:106
+#: app/routes.py:113
 msgid "Your changes have been saved."
 msgstr "Изменения сохранены"
 
-#: app/routes.py:119 app/routes.py:135
+#: app/routes.py:126 app/routes.py:142
 msgid "User %(username) not found"
 msgstr "Пользователь %(username) не найден"
 
-#: app/routes.py:122
+#: app/routes.py:129
 msgid "You cannot follow yourself"
 msgstr "Вы не можете подписаться на себя"
 
-#: app/routes.py:126
+#: app/routes.py:133
 msgid "You are following %(username)!"
 msgstr "Вы подписались на %(username)"
 
-#: app/routes.py:142
+#: app/routes.py:149
 msgid "You are not following %(username)"
 msgstr "Вы отпаслись от %(username)"
 
-#: app/routes.py:155
+#: app/routes.py:162
 msgid "Check your email for the instructions to reset your password"
 msgstr "Дальнейшие инструкции отправлены на почту"
 
-#: app/routes.py:171
+#: app/routes.py:178
 msgid "Your password has been reset"
-msgstr "Ваш пароль быд сброшен"
+msgstr "Ваш пароль был сброшен"
+
+#: app/translate.py:11
+msgid "Error: the translator service is not configured"
+msgstr "Ошибка: сервис перевода не настроен"
+
+#: app/translate.py:15
+msgid "Error: the translation service is failed"
+msgstr "Ошибка: сервис перевода вызвал ошибку"
 
 #: app/templates/404.html:4
 msgid "File Not found"
 msgstr "Файл не найден"
+
+#: app/templates/base.html:62
+msgid "Error: Could not contact server"
+msgstr "Ошибка: сервер не отвечает"
 

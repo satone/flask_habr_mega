@@ -69,3 +69,11 @@ Traceback (most recent call last):
     return getattr(obj, attribute)
 jinja2.exceptions.UndefinedError: 'from' is undefined
 2022-04-11 12:49:22,663 INFO: Microblog Startup [in C:\Users\saton\OneDrive - korjkx.ru\PycharmProjects\flask_habr_mega\app\__init__.py:42]
+2022-04-28 08:42:56,238 INFO: Microblog Startup [in /home/user/PycharmProjects/flask_habr_mega/app/__init__.py:53]
+2022-04-28 08:43:34,164 INFO: Microblog Startup [in /home/user/PycharmProjects/flask_habr_mega/app/__init__.py:53]
+2022-04-28 08:45:26,045 INFO: Microblog Startup [in /home/user/PycharmProjects/flask_habr_mega/app/__init__.py:53]
+2022-04-28 08:45:37,713 INFO: Microblog Startup [in /home/user/PycharmProjects/flask_habr_mega/app/__init__.py:53]
+2022-04-28 08:45:56,978 INFO: Microblog Startup [in /home/user/PycharmProjects/flask_habr_mega/app/__init__.py:53]
+2022-04-28 08:49:05,124 INFO: Microblog Startup [in /home/user/PycharmProjects/flask_habr_mega/app/__init__.py:53]
+2022-04-28 08:51:25,970 INFO: Microblog Startup [in /home/user/PycharmProjects/flask_habr_mega/app/__init__.py:53]
+2022-04-28 08:51:32,572 INFO: Microblog Startup [in /home/user/PycharmProjects/flask_habr_mega/app/__init__.py:53]
