@@ -1,18 +1,28 @@
-from datetime import datetime, timedelta
 import unittest
-from app import app, db
-from app.models import User, Post
+from datetime import datetime, timedelta
 from hashlib import md5
+
+from app import db, create_app
+from app.models import User, Post
+from config import Config
+
+
+class TestConfig(Config):
+    TESTING = True
+    SQLALCHEMY_DATABASE_URI = 'sqlite://'
 
 
 class UserModelCase(unittest.TestCase):
     def setUp(self):
-        app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://'
+        self.app = create_app(TestConfig)
+        self.app_context = self.app.app_context()
+        self.app_context.push()
         db.create_all()
 
     def tearDown(self) -> None:
         db.session.remove()
         db.drop_all()
+        self.app_context.pop()
 
     def test_password_hashing(self):
         u = User(username='susan', email='s@s.s')
@@ -23,7 +33,7 @@ class UserModelCase(unittest.TestCase):
     def test_avatar(self):
         u = User(username='john', email='j@j.j')
         digest = md5(u.email.lower().encode('utf-8')).hexdigest()
-        self.assertEqual(u.avatar(128), (f'https://www.gravatar.com/avatar/{digest}?d=identicon&s=128'))
+        self.assertEqual(u.avatar(128), f'https://www.gravatar.com/avatar/{digest}?d=identicon&s=128')
 
     def test_follow(self):
         u1 = User(username='John', email='j@j.j')

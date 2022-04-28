@@ -16,3 +16,4 @@ SQLAlchemy
 click
 guess-language_spirit
 requests
+python-dotenv
